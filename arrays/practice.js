@@ -19,7 +19,7 @@ var arr = [10,20,30];
 
 //Code Here
 function first(arr) {
-  return first[0];
+  return arr[0];
 }
 
 
@@ -39,7 +39,7 @@ var arr = [40,50,60];
 
 
 function last(arr) {
-  return(last[-1]);
+  return(arr.pop());
 }
 
 ////////// PROBLEM 3 //////////
@@ -57,7 +57,7 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 
 function looper(family) {
     for (i of family) {
-      console.log(i);
+      alert(i);
   }
 }
 
@@ -78,7 +78,7 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
 function reversedLooper(letters) {
   for (i of letters.reverse()) {
-    console.log(i);
+    alert(i);
   }
 }
 
@@ -94,12 +94,16 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here 
+
+let newNums = [];
+
 function evenFinder(nums) {
   for (i of nums) {
     if (i % 2 === 0) {
-      console.log(i);
+      newNums.push(i);
     }
   }
+  return newNums;
 }
 
 
