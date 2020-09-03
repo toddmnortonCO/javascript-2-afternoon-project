@@ -76,11 +76,15 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 //Code Here
 
 
-function reversedLooper(letters) {
-  for (i of letters.reverse()) {
-    alert(i);
+function reversedLooper(arr) {
+  // for (i in arr) {
+
+  for (let i = arr.length -1; i >= 0; i--) {
+    alert(arr[i])
   }
+  return arr;
 }
+
 
 ////////// PROBLEM 5 //////////
 
