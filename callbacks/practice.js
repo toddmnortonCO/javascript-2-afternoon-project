@@ -99,7 +99,7 @@ multiply(4, 3, function(answer){
 //Code Here 
 
 function contains(arr, name, cb) {
-  name === arr ? cb(true) : cb(false);
+  arr.includes(name) ? cb(true) : cb(false);
 }
 
 // Do not edit the code below.
@@ -147,7 +147,7 @@ uniq(names, function(uniqArr){
 
 function each(names, cb) {
   for (let names = 0; names <= names.length; names++) {
-    return cb(names, names.index);
+    cb(names, names.findIndex(names, 0));
   }
 }
 
